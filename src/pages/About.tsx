@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Target, Eye, Heart, Code, Lightbulb, Shield } from "lucide-react";
+import CEO from "@/assets/Gracieux-Kitsa-ryanprime-technologies.jpeg";
 
 const values = [
   {
@@ -132,13 +133,18 @@ const About = () => {
                 <div className="aspect-square max-w-md mx-auto relative">
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl" />
                   <div className="relative glass-card rounded-3xl overflow-hidden h-full flex items-center justify-center">
-                    <div className="text-center p-8">
+                    {/* <div className="text-center p-8">
                       <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center mb-6">
                         <span className="font-display text-5xl font-bold text-white">GK</span>
                       </div>
                       <h3 className="font-display text-2xl font-bold text-foreground">Gracieux Kitsa</h3>
                       <p className="text-primary font-medium">Founder & CEO</p>
-                    </div>
+                    </div> */}
+                    <img
+                      src={CEO}
+                      alt="Gracieux Kitsa, CEO of RyanPrime Technologies"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </motion.div>
